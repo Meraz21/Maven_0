@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Multi Cart Automation Suit" verbose="1">
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<listeners>
+		<listener class-name="com.mco.ExtentReportListener.ExtentReporterNG" />
+		<listener class-name="com.mco.analyzer.Transformations" />
+	</listeners>
+
+	<test name="Multi Cart Portal test cases">
+		<classes>
+	<!-- 	<class name=com.mco.tests.RegistrationPageTest/> -->
+			<class name="com.mco.tests.LoginPageTest" />
+		</classes>
+	</test>
+</suite>

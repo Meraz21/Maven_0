@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Multi Cart Automation Suit]">
+  <listeners>
+    <listener class-name="com.mco.ExtentReportListener.ExtentReporterNG"/>
+    <listener class-name="com.mco.analyzer.Transformations"/>
+  </listeners>
+  <test thread-count="5" name="Multi Cart Portal test cases(failed)">
+    <classes>
+      <class name="com.mco.tests.HomePageTest">
+        <methods>
+          <include name="loginSourceButtonNameTest"/>
+          <include name="contactUsLinkTest"/>
+          <include name="abotUsLinkTest"/>
+          <include name="CurrencyListsTest"/>
+          <include name="viewCartLinkTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.mco.tests.HomePageTest -->
+    </classes>
+  </test> <!-- Multi Cart Portal test cases(failed) -->
+</suite> <!-- Failed suite [Multi Cart Automation Suit] -->

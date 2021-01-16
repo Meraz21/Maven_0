@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Multi Cart Regression Suit]">
+  <listeners>
+    <listener class-name="com.mco.ExtentReportListener.ExtentReporterNG"/>
+    <listener class-name="com.mco.analyzer.Transformations"/>
+  </listeners>
+  <test thread-count="5" name="testng(failed)">
+    <classes>
+      <class name="com.mco.tests.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginLogoImageTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mco.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- testng(failed) -->
+</suite> <!-- Failed suite [Multi Cart Regression Suit] -->
