@@ -9,9 +9,9 @@
 
 	<test thread-count="5" name="testng">
 		<classes>
-			<!-- <class name="com.mco.tests.RegistrationPageTest"/> -->
+			<class name="com.mco.tests.RegistrationPageTest"/> 
 			<class name="com.mco.tests.LoginPageTest" />
-			<!-- <class name="com.HomePageTest.java"/> -->
+			<class name="com.HomePageTest.java"/>
 		</classes>
 	</test> <!-- testng -->
 </suite> <!-- Suite -->
