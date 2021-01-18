@@ -27,7 +27,7 @@ public class HomePageTest extends TestBase {
 		homePage.validatPageTitle();
 		String title = loginPage.validatePageTitle();
 		Assert.assertEquals(title, "WildFire Cart", "Title of is 'WildFire Cart' not Available!!");
-		System.out.println("The Assertion has passed...");
+		System.out.println("The Assertion has passed Smothly...");
 	}
 
 	@Test(priority = 2)
