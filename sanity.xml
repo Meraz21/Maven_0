@@ -7,12 +7,12 @@
 	<listener class-name="com.mco.analyzer.Transformations" />
 	</listeners>
 
-  <test name="Multi Cart Portal test cases">
+  <test name="Multi Cart Sanity test Suit">
   
   <classes>
 			<class name="com.mco.tests.HomePageTest">  </class>
-			<!-- <class name="com.mco.tests.LoginPageTest"> </class>
-	   <class name="com.mco.tests.RegistrationPageTest"> </class> -->
+			 <class name="com.mco.tests.LoginPageTest"> </class>
+	 <!--   <class name="com.mco.tests.RegistrationPageTest"> </class> -->
 
 		</classes>
   </test> <!-- Test -->
