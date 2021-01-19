@@ -1,11 +1,14 @@
 package com.mco.pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.mco.base.TestBase;
+import com.mco.utill.TestUtill;
 
 public class LoginPage extends TestBase {
 
@@ -23,7 +26,7 @@ public class LoginPage extends TestBase {
 
 	@FindBy(xpath = "//button[@id='jqLogin']")
 	WebElement login_Button;
-	
+	//*[@id='dLabel']/span
 	@CacheLookup
 	@FindBy(xpath = "//*[@id='dLabel']/span")
 	WebElement current_User_Name;
@@ -56,10 +59,11 @@ public class LoginPage extends TestBase {
 
 	}
 
-	public String validatCurentUserName() {
+	public String validatCurentUserName() throws IOException {
 		String curent_Name = current_User_Name.getText();
 		System.err.println("\nCurent User Name is : " + curent_Name);
 		//TestUtill.expWait(curent_Name);
+		TestUtill.takeScreenshotAtEndOfTest();
 		return curent_Name;
 	}
 }

@@ -1,5 +1,7 @@
 package com.mco.tests;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -43,7 +45,7 @@ public class RegistrationPageTest extends TestBase {
 	}
 	@Test(priority=2,dataProvider="getMCOTestData")
 	public void newUserRegistrationTest(String email,String userName, String password, 
-		String confirmPassword, String firstName, String lastName, String address) {
+		String confirmPassword, String firstName, String lastName, String address) throws IOException {
 		registrationPage.validateNewUserRegistration(email, userName, password, confirmPassword, firstName, lastName, address);
 		loginPage.validatCurentUserName();
 		//registrationPage.validatCurentUserName();
